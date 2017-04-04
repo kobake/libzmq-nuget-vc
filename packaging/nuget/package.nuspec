@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+    <metadata minClientVersion="2.5">
+        <id>libzmq-vc141</id>
+        <title>libzmq-vc141</title>
+        <version>4.2.2.0</version>
+        <authors>zeromq</authors>
+        <owners>kobake</owners>
+        <licenseUrl>https://www.gnu.org/licenses/lgpl.html</licenseUrl>
+        <projectUrl>https://github.com/kobake/libzmq-vc141-nuget</projectUrl>
+        <iconUrl>http://zeromq.wdfiles.com/local--files/admin%3Acss/logo.gif</iconUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <summary>libzmq library package for Visual Studio 2017 C++ (msvc141) project. This package is experimental, so use at your own risk.</summary>
+        <description>libzmq library package for Visual Studio 2017 C++ (msvc141) project. This package is experimental, so use at your own risk.</description>
+        <releaseNotes>libzmq 4.2.2</releaseNotes>
+        <copyright>Copyright 2012 iMatix Corporation and Contributors</copyright>
+        <tags>native, libzmq, zmq, C, C++</tags>
+        <dependencies>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="package.targets" target="build\native\libzmq-vc141.targets" />
+
+        <file src="..\..\libzmq\include\*.h" target="build\native\include\" />
+
+        <file src="..\..\libzmq\bin\Win32\Release\v141\dynamic\libzmq.lib" target="build\native\bin\" />
+        <file src="..\..\libzmq\bin\Win32\Release\v141\dynamic\libzmq.dll" target="build\native\bin\" />
+    </files>
+</package>

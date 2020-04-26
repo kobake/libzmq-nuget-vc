@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+    <metadata minClientVersion="2.5">
+        <id>libzmq-vc142</id>
+        <title>libzmq-vc142</title>
+        <version>4.2.3</version>
+        <authors>zeromq</authors>
+        <owners>kobake</owners>
+        <license type="expression">LGPL-3.0-or-later</license>
+        <projectUrl>https://github.com/kobake/libzmq-nuget-vc</projectUrl>
+        <icon>logo.png</icon>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <summary>libzmq for vc142. Compiler: VS 2019 16.5.4.</summary>
+        <description>libzmq (ZeroMQ library), packaged for Visual Studio 2019 (vc142). Compiler: Visual Studio 2019 16.5.4.</description>
+        <releaseNotes>libzmq 4.2.3</releaseNotes>
+        <copyright>Copyright 2012 iMatix Corporation and Contributors</copyright>
+        <tags>native, libzmq, zmq, C, C++</tags>
+        <dependencies>
+        </dependencies>
+    </metadata>
+    <files>
+        <!-- package resource -->
+        <file src="logo.png"                            target="" />
+
+        <!-- targets -->
+        <file src="package.targets" target="build\native\libzmq-vc142.targets" />
+
+        <!-- headers -->
+        <file src="..\..\libzmq\include\*.h" target="build\native\include\" />
+
+        <!-- static libraries -->
+        <file src="..\bin_x86_debug\libzmq-v142-mt-sgd-4_2_3.lib" target="build\native\bin\libzmq-v142-mt-sgd-4_2_3-x86.lib" />
+        <file src="..\bin_x86_release\libzmq-v142-mt-s-4_2_3.lib" target="build\native\bin\libzmq-v142-mt-s-4_2_3-x86.lib" />
+        <file src="..\bin_x64_debug\libzmq-v142-mt-sgd-4_2_3.lib" target="build\native\bin\libzmq-v142-mt-sgd-4_2_3-x64.lib" />
+        <file src="..\bin_x64_release\libzmq-v142-mt-s-4_2_3.lib" target="build\native\bin\libzmq-v142-mt-s-4_2_3-x64.lib" />
+    </files>
+</package>
